@@ -1,14 +1,14 @@
 import React from "react";
 import Image from "next/image";
-import pyramid from "../../public/images/pyramid.jpg";
 
 const LargeCard = () => {
   return (
     <div className="relative py-16 cursor-pointer">
       <div className="relative h-96 min-w-[300px]">
         <Image
-          src={pyramid}
+          src="/images/pyramid.jpg"
           fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover rounded-2xl"
           alt="large-pic"
         />

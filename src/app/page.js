@@ -4,11 +4,25 @@ import LargeCard from "@/Components/LargeCard";
 import MeduimCard from "@/Components/MediumCard";
 import SmallCard from "@/Components/SmallCard";
 
-export default function Home() {
+const getImages = async () => {
+  try {
+    const res = await fetch(
+      "https://64a9f1e98b9afaf4844b2721.mockapi.io/images"
+    );
+
+    console.log(await res.json());
+    return await res.json();
+  } catch (e) {
+    console.log(e);
+  }
+};
+
+export default async function Home() {
+  const images = await getImages();
   return (
     <>
       {/* Header */}
-      <Header />
+
       <main className="">
         {/* Banner */}
         <Banner />

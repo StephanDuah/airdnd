@@ -1,12 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import hero2 from "../../public/images/hero2.jpg";
 
 const Banner = () => {
   return (
     <div className="relative h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[70vh]">
       <Image
-        src={hero2}
+        src="/images/hero2.jpg"
         alt="hero"
         fill
         priority
