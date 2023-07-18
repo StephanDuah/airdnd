@@ -7,7 +7,8 @@ const LargeCard = () => {
       <div className="relative h-96 min-w-[300px]">
         <Image
           src="/images/pyramid.jpg"
-          fill
+          height={100}
+          width={100}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover rounded-2xl"
           alt="large-pic"

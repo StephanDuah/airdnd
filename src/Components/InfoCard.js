@@ -11,7 +11,8 @@ const InfoCard = ({ att }) => {
         <Image
           src="/images/pyramid.jpg"
           alt="pic"
-          fill
+          width={100}
+          height={100}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="object-cover rounded-2xl"
           priority

@@ -7,7 +7,8 @@ const Banner = () => {
       <Image
         src="/images/hero2.jpg"
         alt="hero"
-        fill
+        width={100}
+        height={100}
         priority
         className="object-cover object-center"
       />
